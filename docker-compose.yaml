@@ -1,0 +1,19 @@
+
+version: "3.8"
+services:
+
+
+
+  frontend:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: party-client
+    container_name: front-end
+    depends_on:
+      - server
+    ports:
+      - "3000:3000"
+
+volumes:
+  data: 
