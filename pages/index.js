@@ -75,8 +75,8 @@ export default function Home() {
         </section>
 
         <section className='mt-5'>
-          {Mutables.caseCards.map((card, idx) => {
-            return <CaseCard key={idx} card={card} />
+          {Mutables.caseStudy.map((card, idx) => {
+            return <CaseCard key={idx} card={card} index={idx} />
           })}
 
         </section>

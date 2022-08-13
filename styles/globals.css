@@ -16,12 +16,21 @@ body {
   font-style:normal;
   color:black;
 }
+.roboto{
+  font-family:Roboto,Arial;
+  font-style:normal;
+}
+
 
 .small-info{
   font-family:Roboto,Arial;
   color: #5d5d5d;
   font-size:18px; 
   font-weight: 300;
+}
+
+.white{
+  color:white;
 }
 
 
@@ -71,3 +80,4 @@ a {
     background: black;
   }
 }
+

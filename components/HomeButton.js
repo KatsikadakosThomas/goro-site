@@ -1,11 +1,13 @@
 
 import { Component } from 'react';
+import Link from 'next/link';
 
 
 
 
 class HomeButton extends Component {
     state = {  }
+    
     render() { 
         return ( 
             <>
@@ -23,8 +25,9 @@ class HomeButton extends Component {
 
             `}
             </style>
-
+            <Link href={`/CaseStudy/${this.props.index}`}>
             <div className='button text-center'>{this.props.text} </div>
+            </Link>
             </>
          );
     }

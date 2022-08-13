@@ -13,16 +13,18 @@ export default class Mutables {
         {name:"gorodimitris@gmail.com",url:""},
     ]
 
-    static caseCards=[
+    static caseStudy=[
         {type:"UI/UX DESIGN / STRATEGY",
         title:"Marketeers have access to high quality official assets for campaigns",
         subTitle:"Making a easy to use UI for marketeers",
-        photo:"/Frame190.png"
+        photo:"/Frame190.png",
+        heroPhoto:"/Frame153.jpg"
         },
         {type:"UI/UX design / Strategy",
         title:"Concierge services for airbnb apartments",
         subTitle:"Accommodation leveled up",
-        photo:"/Frame193.png"
+        photo:"/Frame193.png",
+        heroPhoto:"/Frame154.jpg"
         }
     ]
 };

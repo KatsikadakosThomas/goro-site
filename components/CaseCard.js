@@ -2,7 +2,7 @@ import Image from 'next/image'
 import HomeButton from './HomeButton';
 
 
-const CaseCard = ({card}) => {
+const CaseCard = ({card,index}) => {
     return ( 
 <>
 <style jsx>
@@ -80,7 +80,10 @@ const CaseCard = ({card}) => {
             <p className='small-info'>{card.type}</p>
             <h5>{card.title}</h5>
             <p>{card.subTitle}</p>
-            <HomeButton text="View case study"></HomeButton>
+            
+          
+            <HomeButton text="View case study" index={index}></HomeButton>
+           
         </div>
 
       
