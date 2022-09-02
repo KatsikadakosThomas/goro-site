@@ -120,25 +120,70 @@ const CaseStudy = () => {
                 clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
               }
 
-              #vector2{
+                #vector2{
+              
+              width: 100%;
+              height:2325px;
+              z-index: 3;
+              position: absolute;
+              top:0;
+              left:0;
+
+              background: #69AC4E;
+              clip-path: polygon(0 2%, 100% 0, 100% 98%, 0% 100%);
+              }
+
+              #vector3{
             
             width: 100%;
-            height:2325px;
-            z-index: 3;
-            position: absolute;
             top:0;
             left:0;
+            z-index: 5;
+            position: absolute;
+          
 
-            background: #69AC4E;
-            clip-path: polygon(0 2%, 100% 0, 100% 98%, 0% 100%);
+            background: #6BBAEC;
+            clip-path: polygon(0 0, 100% 0.5%, 100% 100%, 0% 100%);
           }
+
+            #vector4{
+          
+          width: 100%;
+          height:8190px;
+          z-index: 3;
+          position: absolute;
+          top:0;
+          left:0;
+
+          background: #69AC4E;
+          clip-path: polygon(0 0.5%, 100% 0, 100% 99%, 0% 100%);
+          }
+
 
           .vectorContainer{
             position: relative;
             width: 100%;
             height: 2290px;
           }
-          
+
+          .persona{
+            width:924px;
+
+          }
+          .designSystemPhoto{
+           
+          width:initial;
+          object-fit: contain;
+          }
+
+          .designSystemDiv{
+            padding:50px;
+            background-color:white;
+            overflow:auto;
+            width:760px;
+            margin:auto;
+          }
+
             `}
       </style>
 
@@ -232,8 +277,8 @@ const CaseStudy = () => {
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          <SwiperSlide><img src="/Cosmote-Slide1.jpg" style={{objectFit:"contain",width:"100%"}}></img></SwiperSlide>
-          <SwiperSlide><img src="/cosmote2.png" style={{objectFit:"cover",width:"100%"}}></img></SwiperSlide>
+          <SwiperSlide><img src="/Cosmote-Slide1.jpg" style={{ objectFit: "contain", width: "100%" }}></img></SwiperSlide>
+          <SwiperSlide><img src="/cosmote2.png" style={{ objectFit: "cover", width: "100%" }}></img></SwiperSlide>
           <SwiperSlide><img src="/Cosmote-Slide1.jpg"></img></SwiperSlide>
           <SwiperSlide><img src="/Cosmote-Slide1.jpg"></img></SwiperSlide>
         </Swiper>
@@ -267,15 +312,91 @@ const CaseStudy = () => {
           <CaseCard title={"Opportunity #3"} info={"Campaign cost efficiency "} text={"Some campaigns due to low budget deliver low quality assets. Now with a low cost and quick support there will be an opportunity to have a general increase in quality of every campaign without increasing the budget."} />
           <CaseCard title={"Opportunity #4"} info={"Performance marketing"} text={"We’ve researched that with high quality assets campaigns hit higher numbers in the performance metrics. Helping achieve better scores the clients KPI’s."} />
           <p className="w700 s33 roboto white mt-5 summaryContainer">
-              Challenges
-            </p >
+            Challenges
+          </p >
           <CaseCard title={"Challenge #1"} info={"Low level of adoption"} text={"The user base mostly consisted of 40+ y.o people and there was an adoption challenge for the product since new tools are hard to be incorporated into older employees."} />
           <CaseCard title={"Challenge #1"} info={"Raw assets are hard to reach"} text={"Big tech companies are mostly hard to reach and this creates a challenge on the early acquisition of their assets in the first place."} />
 
         </div>
-        <div id="vector2">ffffffffff</div>
+        <div id="vector2"></div>
       </div>
-<div>ffffffffffffuuck</div>
+
+      <Paragraph title={"Interviews & Surveys"} info={"We’ve contacted business managers and marketers"}>
+        <p className='mt-3 small-info'>
+          We’ve run interviews with representatives from the marketing industry, people from the business and marketeers. We’ve tackled usability issues and in general we’ve tried to give everyone a taste of the tool providing them with a prototype.
+        </p>
+        <h2>Goals</h2>
+        <ul>
+          <li>Can they acquire the desired outcome?</li>
+          <li> Will it be useful for them and their colleagues?</li>
+          <li> Do they use tools like that in their processes?</li>
+          <li> What obstacles do they face while kicking off a campaign?</li>
+          <li> Can our solution support and enhance their work?</li>
+        </ul>
+        Goals
+
+
+
+        <p className='mt-3 small-info'>
+          All the answers were revieved and then submited on an online document and the team started the ideation for the next phase. About 25 people were interviewed from various backgrounds but mostly from the same industry.
+        </p>
+      </Paragraph>
+          <br/>
+
+
+      <Paragraph title={"Understanding the user"} info={"Gaining the end-user’s perspective"}>
+        <p className='mt-3 small-info '>
+        We created personas that have goals and characteristics representing the needs of the many.
+        </p>
+      
+      </Paragraph>
+      <div style={{margin:"auto",textAlign:"center" }}>
+      <img className="persona mb-4" src="/Cosmote-Persona-Pic01.jpg" alt="persona1"/>
+      <img className="persona" src="/Cosmote-Persona-Pic02.png" alt="persona2"/>
+      </div>
+  
+
+
+      <div className='vectorContainer mb-5 mt-5'>
+        <div id="vector3">
+
+          <div className='summaryContainer mt-5 mb-5'>
+
+            <p className="small-info white mb-1">Wireframe, Prototype</p>
+            <span className="w700 s33 roboto white">
+            The roadmap to the end product
+            </span >
+            <br />
+            <p className="w700 s33 roboto white mt-5">
+            Paper prototypes
+            </p >
+            <p className='mt-3 small-info white'>
+            Aiming to facilitate fast brainstorming sessions, targeting the essentials with the team we relied on paper prototypes to express the main look and feel of the app.
+        </p>
+        <img className="persona " src="/paperprotoype.jpg" alt="persona2"/>
+        <p className="w700 s33 roboto white mt-5">
+        Visual design
+            </p >
+            <p className='mt-3 small-info white'>
+            A design system was created with all the necessary components for the platform to support functional & internal consistency, reducing building time, allowing room for innovation and to have a strong brand.
+        </p>
+
+          </div>
+
+         <div className='designSystemDiv mb-5'>
+         {Mutables.CS1VisualDesignPhotos.map((img,idx)=>{
+            return <img  key={idx} className="designSystemPhoto " src={`/designSystem/${img}`} alt={img}/>
+          })}
+         </div>
+      
+   
+
+        </div>
+        <div id="vector4"></div>
+       
+      </div>
+      <div>433</div>
+      
     </>
 
   );

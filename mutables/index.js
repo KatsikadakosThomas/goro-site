@@ -27,4 +27,7 @@ export default class Mutables {
         heroPhoto:"/Frame154.jpg"
         }
     ]
+
+    static CS1VisualDesignPhotos=["ButtomNavMobile.jpg", "Buttons-1.jpg", "Buttons.jpg", "Character.jpg", "Dialogs.jpg", "ExpansionPanels.jpg", "Icons.jpg", "Steppers.jpg", "StyleSheet.jpg", "Tabs.jpg", "TextFields.jpg", "Toolsbars.jpg",
+              ]
 };
