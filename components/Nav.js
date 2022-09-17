@@ -69,7 +69,7 @@ const Nav = () => {
           </Link>
           <nav className='d-flex justify-content-between flex-column flex-md-row align-items-md-center mt-md-0 mt-5'>
             {Mutables.nav.map((navItem) => {
-              return <a href={navItem.url}><p className='me-5 links mt-md-0 mt-3' key={navItem.name}>{navItem.name}</p></a>
+              return <a key={navItem.name+"a"} href={navItem.url}><p className='me-5 links mt-md-0 mt-3' key={navItem.name}>{navItem.name}</p></a>
             })}
           </nav>
 
