@@ -33,6 +33,9 @@ body {
   color:white;
 }
 
+.Zindex{
+  z-index: 100;
+}
 
 .s33{
 font-size:33px;
@@ -81,3 +84,48 @@ a {
   }
 }
 
+
+
+.summaryContainer{
+  width:760px;
+  margin:auto;
+
+}
+
+@media only screen and (max-width: 1030px) {
+  .summaryContainer {
+    width:560px;
+  }
+
+}
+
+@media only screen and (max-width: 785px) {
+  .summaryContainer {
+      width:460px;
+    }
+
+}
+
+
+.uncontainedImages{
+  width:924px;
+
+}
+
+@media only screen and (max-width: 1030px) {
+  .uncontainedImages {
+    width:650px;
+  }
+
+}
+
+@media only screen and (max-width: 785px) {
+.uncontainedImages {
+    width:560px;
+  }
+
+}
+
+.color484848{
+  color:#484848;
+}

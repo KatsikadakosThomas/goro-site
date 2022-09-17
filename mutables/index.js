@@ -7,10 +7,10 @@ export default class Mutables {
     //   {name:"",url:""},
 
     static nav=[
-        {name:"Linkedin",url:""},
+        {name:"Linkedin",url:"https://www.linkedin.com/in/gorodimitris/"},
         {name:"CV",url:""},
         {name:"Work",url:""},
-        {name:"gorodimitris@gmail.com",url:""},
+        {name:"gorodimitris@gmail.com",url:"mailto:tkatsika@gmail.com"},
     ]
 
     static caseStudy=[

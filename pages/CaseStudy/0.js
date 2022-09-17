@@ -1,61 +1,20 @@
-import Head from 'next/head'
-import styles from '../../styles/Home.module.css'
-import Mutables from '../../mutables'
+import Head from 'next/head';
+import styles from '../../styles/Home.module.css';
+import Mutables from '../../mutables';
 import { useRouter } from 'next/router';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import CaseStudyCard from "../../components/CaseStudyCard";
+import Paragraph from "../../components/Paragraph";
 
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/navigation';
 
-const Paragraph = ({ title, info, children }) => {
 
-  return (
-    <div className='summaryContainer mt-5 mb-5'>
-      <p className="small-info">{info}</p>
-      <span className="s33 roboto-font">
-        {title}
-      </span >
-      {children}
-      <style jsx>
-        {`
-        .summaryContainer
-        {
-          width:760px;
-                margin:auto;
-                }
-            `}
-      </style>
-    </div>
-  )
-}
 
-const CaseCard = ({ title, info, text }) => {
 
-  return (
-    <div className='summaryContainer mt-5 mb-5'>
-      <p className="small-info">{info}</p>
-      <span className="s33 roboto-font">
-        {title}
-      </span >
-      <p className='mt-3 small-info'>
-        {text}
-      </p>
-      <style jsx>
-        {`
-        .summaryContainer
-        {
-                 width:760px;
-                margin:auto;
-                background-color:white;
-                border-radius:15px;
-                padding:40px 60px 40px 60px;
-                }
-            `}
-      </style>
-    </div>
-  )
-}
 
 
 const CaseStudy = () => {
@@ -64,6 +23,15 @@ const CaseStudy = () => {
 
   return (
     <>
+
+
+      {/* ░█████╗░░██████╗░██████╗
+          ██╔══██╗██╔════╝██╔════╝
+          ██║░░╚═╝╚█████╗░╚█████╗░
+          ██║░░██╗░╚═══██╗░╚═══██╗
+          ╚█████╔╝██████╔╝██████╔╝
+          ░╚════╝░╚═════╝░╚═════╝░ */}
+
       <style jsx>
         {`
               .heroPhoto{
@@ -72,10 +40,7 @@ const CaseStudy = () => {
   
               }
 
-              #tableContainer{
-                width:934px;
-                margin:auto; 
-              }
+             
 
               td{
                 vertical-align:top;
@@ -97,10 +62,7 @@ const CaseStudy = () => {
                 border-bottom:solid 1px #E0E0E0;
               }
 
-              .summaryContainer{
-                width:760px;
-                margin:auto;
-              }
+           
          
               #carousel{
                 width:80vw !important;
@@ -110,9 +72,10 @@ const CaseStudy = () => {
               #vector1{
             
                 width: 100%;
+                height:99%;
                 top:0;
                 left:0;
-                z-index: 5;
+                z-index: -5;
                 position: absolute;
               
 
@@ -123,8 +86,8 @@ const CaseStudy = () => {
                 #vector2{
               
               width: 100%;
-              height:2325px;
-              z-index: 3;
+              height:100%;
+              z-index: -6;
               position: absolute;
               top:0;
               left:0;
@@ -132,10 +95,16 @@ const CaseStudy = () => {
               background: #69AC4E;
               clip-path: polygon(0 2%, 100% 0, 100% 98%, 0% 100%);
               }
+              .vectorContainer1{
+            position: relative;
+            width: 100%;
+    
+          }
 
               #vector3{
             
             width: 100%;
+            height:99.4%;
             top:0;
             left:0;
             z-index: 5;
@@ -146,10 +115,15 @@ const CaseStudy = () => {
             clip-path: polygon(0 0, 100% 0.5%, 100% 100%, 0% 100%);
           }
 
+          #opportunities{
+            padding-top:50px;
+            padding-bottom:100px
+          }
+
             #vector4{
           
           width: 100%;
-          height:8190px;
+          height:100%;
           z-index: 3;
           position: absolute;
           top:0;
@@ -160,19 +134,36 @@ const CaseStudy = () => {
           }
 
 
-          .vectorContainer{
+        
+
+          .vectorContainer2{
             position: relative;
             width: 100%;
-            height: 2290px;
+            height: 6404px;
           }
 
-          .persona{
-            width:924px;
+        #tableContainer{
+          width:934px;
+          margin:auto; 
+        }
 
-          }
+        @media only screen and (max-width: 1030px) {
+          #tableContainer {
+              width:730px;
+            }
+ 
+        }
+        @media only screen and (max-width: 785px) {
+          #tableContainer {
+              width:530px;
+            }
+ 
+        }
+
+
           .designSystemPhoto{
            
-          width:initial;
+          width:100%;
           object-fit: contain;
           }
 
@@ -180,12 +171,26 @@ const CaseStudy = () => {
             padding:50px;
             background-color:white;
             overflow:auto;
-            width:760px;
+            width:924px;
             margin:auto;
           }
 
+          @media only screen and (max-width: 1030px) {
+            .designSystemDiv {
+              width:724px;
+            }
+ 
+        }
+
             `}
       </style>
+
+  {/* ░░░░░██╗░██████╗██╗░░██╗
+      ░░░░░██║██╔════╝╚██╗██╔╝
+      ░░░░░██║╚█████╗░░╚███╔╝░
+      ██╗░░██║░╚═══██╗░██╔██╗░
+      ╚█████╔╝██████╔╝██╔╝╚██╗
+      ░╚════╝░╚═════╝░╚═╝░░╚═╝ */}
 
       <Head>
         <title>{Mutables.caseStudy.subtitle}</title>
@@ -272,7 +277,9 @@ const CaseStudy = () => {
 
       <div id="carousel">
         <Swiper
+          modules={[Navigation]}
           spaceBetween={50}
+          navigation
           slidesPerView={1}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
@@ -292,9 +299,9 @@ const CaseStudy = () => {
         </p>
       </Paragraph>
 
-      <div className='vectorContainer mb-5'>
-        <div id="vector1">
-
+      <div className='vectorContainer1 mb-5'>
+    
+          <div id="opportunities" className='Zindex'>
           <div className='summaryContainer mt-5 mb-5'>
 
             <p className="small-info white mb-1">Opportunities and Challenges</p>
@@ -307,18 +314,22 @@ const CaseStudy = () => {
             </p >
           </div>
 
-          <CaseCard title={"Opportunity #1"} info={"High quality assets"} text={"This platform can accommodate the need of high quality campaigns with wide range of reach supporting high budgets. This will attract corporations that have high standards on their deliverables."} />
-          <CaseCard title={"Opportunity #2"} info={"Quick campaign kick off"} text={"Having every asset at the reach of your fingertips creates a unique and optimized experience, enabling for frictionless delivery."} />
-          <CaseCard title={"Opportunity #3"} info={"Campaign cost efficiency "} text={"Some campaigns due to low budget deliver low quality assets. Now with a low cost and quick support there will be an opportunity to have a general increase in quality of every campaign without increasing the budget."} />
-          <CaseCard title={"Opportunity #4"} info={"Performance marketing"} text={"We’ve researched that with high quality assets campaigns hit higher numbers in the performance metrics. Helping achieve better scores the clients KPI’s."} />
+          <CaseStudyCard title={"Opportunity #1"} info={"High quality assets"} text={"This platform can accommodate the need of high quality campaigns with wide range of reach supporting high budgets. This will attract corporations that have high standards on their deliverables."} />
+          <CaseStudyCard title={"Opportunity #2"} info={"Quick campaign kick off"} text={"Having every asset at the reach of your fingertips creates a unique and optimized experience, enabling for frictionless delivery."} />
+          <CaseStudyCard title={"Opportunity #3"} info={"Campaign cost efficiency "} text={"Some campaigns due to low budget deliver low quality assets. Now with a low cost and quick support there will be an opportunity to have a general increase in quality of every campaign without increasing the budget."} />
+          <CaseStudyCard title={"Opportunity #4"} info={"Performance marketing"} text={"We’ve researched that with high quality assets campaigns hit higher numbers in the performance metrics. Helping achieve better scores the clients KPI’s."} />
           <p className="w700 s33 roboto white mt-5 summaryContainer">
             Challenges
           </p >
-          <CaseCard title={"Challenge #1"} info={"Low level of adoption"} text={"The user base mostly consisted of 40+ y.o people and there was an adoption challenge for the product since new tools are hard to be incorporated into older employees."} />
-          <CaseCard title={"Challenge #1"} info={"Raw assets are hard to reach"} text={"Big tech companies are mostly hard to reach and this creates a challenge on the early acquisition of their assets in the first place."} />
+          <CaseStudyCard title={"Challenge #1"} info={"Low level of adoption"} text={"The user base mostly consisted of 40+ y.o people and there was an adoption challenge for the product since new tools are hard to be incorporated into older employees."} />
+          <CaseStudyCard title={"Challenge #1"} info={"Raw assets are hard to reach"} text={"Big tech companies are mostly hard to reach and this creates a challenge on the early acquisition of their assets in the first place."} />
+          </div>
 
-        </div>
-        <div id="vector2"></div>
+          <div id="vector1">
+          
+          </div>
+          <div id="vector2"></div>
+   
       </div>
 
       <Paragraph title={"Interviews & Surveys"} info={"We’ve contacted business managers and marketers"}>
@@ -341,62 +352,103 @@ const CaseStudy = () => {
           All the answers were revieved and then submited on an online document and the team started the ideation for the next phase. About 25 people were interviewed from various backgrounds but mostly from the same industry.
         </p>
       </Paragraph>
-          <br/>
+      <br />
 
 
       <Paragraph title={"Understanding the user"} info={"Gaining the end-user’s perspective"}>
         <p className='mt-3 small-info '>
-        We created personas that have goals and characteristics representing the needs of the many.
+          We created personas that have goals and characteristics representing the needs of the many.
         </p>
-      
+
       </Paragraph>
-      <div style={{margin:"auto",textAlign:"center" }}>
-      <img className="persona mb-4" src="/Cosmote-Persona-Pic01.jpg" alt="persona1"/>
-      <img className="persona" src="/Cosmote-Persona-Pic02.png" alt="persona2"/>
+      <div style={{ margin: "auto", textAlign: "center" }}>
+        <img className="uncontainedImages mb-4" src="/Cosmote-Persona-Pic01.jpg" alt="persona1" />
+        <img className="uncontainedImages" src="/Cosmote-Persona-Pic02.png" alt="persona2" />
       </div>
-  
 
 
-      <div className='vectorContainer mb-5 mt-5'>
+
+      <div className='vectorContainer2 mb-5 mt-5'>
         <div id="vector3">
 
           <div className='summaryContainer mt-5 mb-5'>
 
             <p className="small-info white mb-1">Wireframe, Prototype</p>
             <span className="w700 s33 roboto white">
-            The roadmap to the end product
+              The roadmap to the end product
             </span >
             <br />
             <p className="w700 s33 roboto white mt-5">
-            Paper prototypes
+              Paper prototypes
             </p >
             <p className='mt-3 small-info white'>
-            Aiming to facilitate fast brainstorming sessions, targeting the essentials with the team we relied on paper prototypes to express the main look and feel of the app.
-        </p>
-        <img className="persona " src="/paperprotoype.jpg" alt="persona2"/>
-        <p className="w700 s33 roboto white mt-5">
-        Visual design
-            </p >
-            <p className='mt-3 small-info white'>
-            A design system was created with all the necessary components for the platform to support functional & internal consistency, reducing building time, allowing room for innovation and to have a strong brand.
-        </p>
+              Aiming to facilitate fast brainstorming sessions, targeting the essentials with the team we relied on paper prototypes to express the main look and feel of the app.
+            </p>
 
           </div>
 
-         <div className='designSystemDiv mb-5'>
-         {Mutables.CS1VisualDesignPhotos.map((img,idx)=>{
-            return <img  key={idx} className="designSystemPhoto " src={`/designSystem/${img}`} alt={img}/>
-          })}
-         </div>
-      
-   
+
+          <div style={{ margin: "auto", textAlign: "center" }}>
+            <img className="uncontainedImages" src="/paperprotoype.jpg" alt="persona2" />
+          </div>
+
+          <div className='summaryContainer mt-5 mb-5'>
+            <p className="w700 s33 roboto white mt-5">
+              Visual design
+            </p >
+            <p className='mt-3 small-info white'>
+              A design system was created with all the necessary components for the platform to support functional & internal consistency, reducing building time, allowing room for innovation and to have a strong brand.
+            </p>
+          </div>
+
+
+
+          <div className='designSystemDiv mb-5'>
+            {Mutables.CS1VisualDesignPhotos.map((img, idx) => {
+              return <img key={idx} className="designSystemPhoto mb-5 " src={`/designSystem/${img}`} alt={img} />
+            })}
+          </div>
+
+
 
         </div>
         <div id="vector4"></div>
-       
+
       </div>
-      <div>433</div>
-      
+      <Paragraph title={"Making a new tool"} info={"CONCLUSION"}>
+        <p className='mt-3 small-info'>Design such a tool has it’s challenges. We faced some negative comments at the beginning, 
+          because the market hadn’t used a similar tools before. 
+          The employees were used to an outdated platform performing day to day tasks not supporting the extra features needed
+           and not getting the desired value for it. Now with our business proposition we deliver the resources to do quick and 
+           efficient work adding quality on the end result.</p>
+
+           <p className='mt-3 small-info'>
+           A successful user experience is based on how many people like your app.
+            Develop a strategy to focus on efficient methods and planning, then identify the best solution to meet your goals.
+             A lot of companies want to create a good design. This is not as easy as it sounds.
+              You need to define what good design is and analyze your product thoroughly. 
+              </p>
+      </Paragraph>
+
+      <Paragraph title={"What I could do differently?"}>
+        <ul>
+          <li className='color484848'>
+         <b> More user research </b>
+          </li>
+          <li className='color484848'>
+          <b> Have the platform be more accessible</b>
+          </li >
+          <li className='color484848'>
+          <b> More iterations and more tests of the end result</b>
+          </li>
+        </ul>
+
+      </Paragraph>
+
+      <Paragraph title={"Disclaimer"}>
+            <p className='mt-3 small-info'>This project was done for <a style={{textDecoration:"underline"}} href="https://www.white-space.gr/" target="_blank">Whitespace</a> which has the all the rights of the project.</p>
+      </Paragraph>
+
     </>
 
   );
