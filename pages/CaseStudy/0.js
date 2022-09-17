@@ -285,9 +285,9 @@ const CaseStudy = () => {
           onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide><img alt="Cosmote-Slide1" src="/Cosmote-Slide1.jpg" style={{ objectFit: "contain", width: "100%" }}></img></SwiperSlide>
-          <SwiperSlide><img alt="Cosmote-Slide2" src="/cosmote2.png" style={{ objectFit: "cover", width: "100%" }}></img></SwiperSlide>
-          <SwiperSlide><img alt="Cosmote-Slide3" src="/Cosmote-Slide1.jpg"></img></SwiperSlide>
-          <SwiperSlide><img alt="Cosmote-Slide4" src="/Cosmote-Slide1.jpg"></img></SwiperSlide>
+          <SwiperSlide><img alt="Cosmote-Slide2" src="/Cosmote-Slide2.png" style={{ objectFit: "cover", width: "100%" }}></img></SwiperSlide>
+          <SwiperSlide><img alt="Cosmote-Slide3" src="/Cosmote-Slide3.jpg" style={{ objectFit: "contain", width: "100%" }}></img></SwiperSlide>
+          <SwiperSlide><img alt="Cosmote-Slide4" src="/Cosmote-Slide4.png" style={{ objectFit: "contain", width: "100%" }}></img></SwiperSlide>
         </Swiper>
       </div>
 
