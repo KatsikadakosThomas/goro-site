@@ -201,7 +201,7 @@ const CaseStudy = () => {
       </Head>
 
       <header className='imgContainer mb-5'>
-        <img className="heroPhoto" src={Mutables.caseStudy[0].heroPhoto}></img>
+        <img className="heroPhoto" src={Mutables.caseStudy[0].heroPhoto} alt="hero photo"></img>
       </header>
 
       <div id="tableContainer">
@@ -284,10 +284,10 @@ const CaseStudy = () => {
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          <SwiperSlide><img src="/Cosmote-Slide1.jpg" style={{ objectFit: "contain", width: "100%" }}></img></SwiperSlide>
-          <SwiperSlide><img src="/cosmote2.png" style={{ objectFit: "cover", width: "100%" }}></img></SwiperSlide>
-          <SwiperSlide><img src="/Cosmote-Slide1.jpg"></img></SwiperSlide>
-          <SwiperSlide><img src="/Cosmote-Slide1.jpg"></img></SwiperSlide>
+          <SwiperSlide><img alt="Cosmote-Slide1" src="/Cosmote-Slide1.jpg" style={{ objectFit: "contain", width: "100%" }}></img></SwiperSlide>
+          <SwiperSlide><img alt="Cosmote-Slide2" src="/cosmote2.png" style={{ objectFit: "cover", width: "100%" }}></img></SwiperSlide>
+          <SwiperSlide><img alt="Cosmote-Slide3" src="/Cosmote-Slide1.jpg"></img></SwiperSlide>
+          <SwiperSlide><img alt="Cosmote-Slide4" src="/Cosmote-Slide1.jpg"></img></SwiperSlide>
         </Swiper>
       </div>
 
@@ -446,7 +446,7 @@ const CaseStudy = () => {
       </Paragraph>
 
       <Paragraph title={"Disclaimer"}>
-            <p className='mt-3 small-info'>This project was done for <a style={{textDecoration:"underline"}} href="https://www.white-space.gr/" target="_blank">Whitespace</a> which has the all the rights of the project.</p>
+            <p className='mt-3 small-info'>This project was done for <a style={{textDecoration:"underline"}} href="https://www.white-space.gr/" target="_blank" rel="noreferrer">Whitespace</a> which has the all the rights of the project.</p>
       </Paragraph>
 
     </>
