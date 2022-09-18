@@ -82,7 +82,7 @@ const CaseCard = ({card,index}) => {
             <p>{card.subTitle}</p>
             
           
-            <HomeButton text="View case study" index={index}></HomeButton>
+            <HomeButton text="View case study" slug={card.slug}></HomeButton>
            
         </div>
 

@@ -13,9 +13,6 @@ const Footer = () => {
               min-height:80px;
               background-color:white;
               border-top: 1px solid #EBEBEB;
-              {/* position: absolute;
-              bottom: 0; */}
-  
             }
 
             `}

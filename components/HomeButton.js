@@ -25,7 +25,7 @@ class HomeButton extends Component {
 
             `}
             </style>
-            <Link href={`/CaseStudy/${this.props.index}`}>
+            <Link href={`/CaseStudy/${this.props.slug}`}>
             <div className='button text-center'>{this.props.text} </div>
             </Link>
             </>

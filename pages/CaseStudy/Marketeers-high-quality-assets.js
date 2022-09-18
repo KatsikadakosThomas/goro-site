@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import styles from '../../styles/Home.module.css';
 import Mutables from '../../mutables';
 import { useRouter } from 'next/router';
 // Import Swiper React components
@@ -34,10 +33,11 @@ const CaseStudy = () => {
 
       <style jsx>
         {`
-              .heroPhoto{
+              .headerPhoto{
                 width:100%;
                 height:547.75px;
-  
+                background-image:url(${Mutables.caseStudy[0].heroPhoto});
+                background-position: center;
               }
 
              
@@ -200,8 +200,12 @@ const CaseStudy = () => {
         <meta property="og:image" content="/Ellipse 1.png" />
       </Head>
 
-      <header className='imgContainer mb-5'>
-        <img className="heroPhoto" src={Mutables.caseStudy[0].heroPhoto} alt="hero photo"></img>
+      <header className='headerPhoto mb-5' >
+        <div className='titleContainer'>
+          <h1 className='w900 white'>{Mutables.caseStudy[0].title}</h1>
+          <h3 className='white' >{Mutables.caseStudy[0].subTitle}</h3>
+          <p className='w300 white'>{Mutables.caseStudy[0].type}</p>
+        </div>
       </header>
 
       <div id="tableContainer">
