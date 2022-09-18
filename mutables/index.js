@@ -19,14 +19,14 @@ export default class Mutables {
         subTitle:"Making a easy to use UI for marketeers",
         photo:"/Frame190.png",
         heroPhoto:"/Frame153.jpg",
-        slug:"airbnb-apartments"
+        slug:"Marketeers-high-quality-assets"
         },
         {type:"UI/UX DESIGN / STRATEGY",
         title:"Concierge services for airbnb apartments",
         subTitle:"Accommodation leveled up",
         photo:"/Frame193.png",
         heroPhoto:"/Frame154.jpg",
-        slug:"Marketeers-high-quality-assets"
+        slug:"airbnb-apartments"
         }
     ]
 

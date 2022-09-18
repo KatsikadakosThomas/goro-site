@@ -200,11 +200,11 @@ const CaseStudy = () => {
         <meta property="og:image" content="/Ellipse 1.png" />
       </Head>
 
-      <header className='headerPhoto mb-5' >
-        <div className='titleContainer'>
-          <h1 className='w900 white'>{Mutables.caseStudy[1].title}</h1>
-          <h3 className='white' >{Mutables.caseStudy[1].subTitle}</h3>
-          <p className='w300 white'>{Mutables.caseStudy[1].type}</p>
+      <header className="headerPhoto mb-5">
+        <div className="titleContainer">
+          <h1 className="w900 white">{Mutables.caseStudy[1].title}</h1>
+          <h3 className="white">{Mutables.caseStudy[1].subTitle}</h3>
+          <p className="w300 white">{Mutables.caseStudy[1].type}</p>
         </div>
       </header>
 
@@ -212,7 +212,7 @@ const CaseStudy = () => {
         <table>
           <tbody>
             <tr>
-              <td className='firsttd'>
+              <td className="firsttd">
                 <b>Problem</b>
               </td>
               <td>
@@ -220,7 +220,7 @@ const CaseStudy = () => {
               </td>
             </tr>
             <tr>
-              <td className='firsttd'>
+              <td className="firsttd">
                 <b> Define</b>
               </td>
               <td>
@@ -232,7 +232,7 @@ const CaseStudy = () => {
                     <b> Lack of a way to sell services</b> like laundry, order cleaning, order breakfast or a book taxi
                   </li>
                   <li>
-                    Visitors don’t have a quick way to<b> call greek emergency numbers</b>
+                    Visitors don&apos;t have a quick way to<b> call greek emergency numbers</b>
                   </li>
                   <li>
                     House appliances are hard to operate and<b>printed manuals are not available</b>
@@ -243,7 +243,7 @@ const CaseStudy = () => {
               </td>
             </tr>
             <tr>
-              <td className='firsttd'>
+              <td className="firsttd">
                 <b> Ideate</b>
               </td>
               <td>
@@ -254,7 +254,7 @@ const CaseStudy = () => {
               </td>
             </tr>
             <tr>
-              <td className='firsttd'>
+              <td className="firsttd">
                 <b> Role</b>
               </td>
               <td>
@@ -262,7 +262,7 @@ const CaseStudy = () => {
               </td>
             </tr>
             <tr>
-              <td className='firsttd'>
+              <td className="firsttd">
                 <b>  Project time</b>
               </td>
               <td>
@@ -276,7 +276,7 @@ const CaseStudy = () => {
       </div>
 
       <Paragraph title={"Summary"} info={"HELP TOURISTS ACHIEVE A MORE ENJOYABLE EXPERIENCE DURING THEIR STAY"}>
-        <p className='mt-3 small-info'>
+        <p className="mt-3 small-info">
           This companion app was created with a view to enhance the stay of tourists booking short term stay in Greece by providing concierge services.
           With a connection to individual apartments with specific services available to each one of them the user can gain access to smart features,
           early check in, market items and direct communication with the host.
@@ -298,17 +298,17 @@ const CaseStudy = () => {
       </div>
 
       <Paragraph title={"The competition was on the rise"} info={"COMPETITIVE ANALYSIS"}>
-        <p className='mt-3 small-info'>
+        <p className="mt-3 small-info">
           Tourism in Greece is on the rise and concierge services happen to be one of most investing sectors that can help hosts stand out.
           Villas and hotels that I came across with in my research were providing car services, contactless check in and many more conveniences.
-          With this solution we’ve created a central point of reference for all necessary interactions.
+          With this solution we&apos;ve created a central point of reference for all necessary interactions.
         </p>
       </Paragraph>
 
       <div style={{backgroundColor:"#F8F4F3",padding:"50px 0px"}}>
         <Paragraph title={"How is works"} info={"USER JOURNEY"}>
-          <p className='mt-3 small-info'>
-            We’ve written down the actions needed to make a reservation and in which point the app is engaged.
+          <p className="mt-3 small-info">
+            We&apos;ve written down the actions needed to make a reservation and in which point the app is engaged.
             This served as an access point to every available service for the visitors before and after their arrival.
           </p>
         </Paragraph>
@@ -319,9 +319,9 @@ const CaseStudy = () => {
 
 
       <Paragraph title={"Looking through the eyes of our user"} info={"EMPATHISE STEP"}>
-        <p className='mt-3 small-info '>
+        <p className="mt-3 small-info ">
         Our persona is the person we see as the our future user of the app. 
-        I’ve made some research and after some private interviews i’ve created the profile of a typical guest.
+        I&apos;ve made some research and after some private interviews i&apos;ve created the profile of a typical guest.
         </p>
       </Paragraph>
 
@@ -335,7 +335,7 @@ const CaseStudy = () => {
 
 
         <Paragraph title={"Paper prototypes"}>
-      <p className='mt-3 small-info'>
+      <p className="mt-3 small-info">
         Aiming to facilitate fast brainstorming sessions we relied on paper prototypes to express the main structure and use of the app.
         </p>
         </Paragraph>
@@ -345,7 +345,7 @@ const CaseStudy = () => {
       </div>
 
       <Paragraph title={"Visual design"}>
-      <p className='mt-3 small-info'>
+      <p className="mt-3 small-info">
       Design template ware created with all the necessary components for the platform.
         </p>
         </Paragraph>
@@ -358,33 +358,33 @@ const CaseStudy = () => {
       </div>
 
       <Paragraph title={"Combining smart devices and services"} info={"CONCLUSION"}>
-        <p className='mt-3 small-info'>Design such a tool has it’s challenges. We faced some negative comments at the beginning,
-        Smart devices and appartments services have an impact on a visitors stay. They can increase or, in case they are mishandled, decrease the quality of one’s stay. 
+        <p className="mt-3 small-info">Design such a tool has it&apos;s challenges. We faced some negative comments at the beginning,
+        Smart devices and appartments services have an impact on a visitors stay. They can increase or, in case they are mishandled, decrease the quality of one&apos;s stay. 
         With this app we try to make the experience personalised and more direct. We wanted to make the most of it.</p>
 
-        <p className='mt-3 small-info'>
-        We’ve contacted visitors and some gave us feedback. It impacted the design process.
+        <p className="mt-3 small-info">
+        We&apos;ve contacted visitors and some gave us feedback. It impacted the design process.
          We took their opinion and combined it with the business goals. 
          The end result was something that both satisfied the team, and the visitors.
         </p>
-        <p className='mt-3 small-info'>
+        <p className="mt-3 small-info">
         My process is a very collaborative one. I believe that the best product experience is one that we all come together to define. 
         Our role in the end is to educate, listen, and make things better,
-         but ultimately, it's up to the stakeholders/client to make good choices for the project's direction and need. 
-         Note that we don't approach every project with all of these components every time. This framework has worked well for me and my clients, 
+         but ultimately, it&apos;s up to the stakeholders/client to make good choices for the project&apos;s direction and need. 
+         Note that we don&apos;t approach every project with all of these components every time. This framework has worked well for me and my clients, 
          but not every client needs it.
         </p>
       </Paragraph>
 
       <Paragraph title={"What I could do differently?"}>
         <ul>
-          <li className='color484848'>
+          <li className="color484848">
             <b>Take a personal exprerience of whole stay in the apartment</b>
           </li>
-          <li className='color484848'>
+          <li className="color484848">
             <b> Interview more people</b>
           </li >
-          <li className='color484848'>
+          <li className="color484848">
             <b>Create a design library for consistency, reducing building time and a way to create room for innovation</b>
           </li>
         </ul>
@@ -392,7 +392,7 @@ const CaseStudy = () => {
       </Paragraph>
 
       <Paragraph title={"Disclaimer"}>
-        <p className='mt-3 small-info'>This is a personal freelance project for Smart Cozy Suites.</p>
+        <p className="mt-3 small-info">This is a personal freelance project for Smart Cozy Suites.</p>
       </Paragraph>
 
     </>

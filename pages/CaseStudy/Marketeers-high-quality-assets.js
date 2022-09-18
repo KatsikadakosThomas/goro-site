@@ -200,11 +200,11 @@ const CaseStudy = () => {
         <meta property="og:image" content="/Ellipse 1.png" />
       </Head>
 
-      <header className='headerPhoto mb-5' >
-        <div className='titleContainer'>
-          <h1 className='w900 white'>{Mutables.caseStudy[0].title}</h1>
-          <h3 className='white' >{Mutables.caseStudy[0].subTitle}</h3>
-          <p className='w300 white'>{Mutables.caseStudy[0].type}</p>
+      <header className="headerPhoto mb-5">
+        <div className="titleContainer">
+          <h1 className="w900 white">{Mutables.caseStudy[0].title}</h1>
+          <h3 className="white">{Mutables.caseStudy[0].subTitle}</h3>
+          <p className="w300 white">{Mutables.caseStudy[0].type}</p>
         </div>
       </header>
 
@@ -212,7 +212,7 @@ const CaseStudy = () => {
         <table>
           <tbody>
             <tr>
-              <td className='firsttd'>
+              <td className="firsttd">
                 <b>Problem</b>
               </td>
               <td>
@@ -220,7 +220,7 @@ const CaseStudy = () => {
               </td>
             </tr>
             <tr>
-              <td className='firsttd'>
+              <td className="firsttd">
                 <b> Define</b>
               </td>
               <td>
@@ -243,7 +243,7 @@ const CaseStudy = () => {
               </td>
             </tr>
             <tr>
-              <td className='firsttd'>
+              <td className="firsttd">
                 <b> Ideate</b>
               </td>
               <td>
@@ -251,7 +251,7 @@ const CaseStudy = () => {
               </td>
             </tr>
             <tr>
-              <td className='firsttd'>
+              <td className="firsttd">
                 <b> Role</b>
               </td>
               <td>
@@ -259,7 +259,7 @@ const CaseStudy = () => {
               </td>
             </tr>
             <tr>
-              <td className='firsttd'>
+              <td className="firsttd">
                 <b>  Project time</b>
               </td>
               <td>
@@ -273,8 +273,8 @@ const CaseStudy = () => {
       </div>
 
       <Paragraph title={"Summary"} info={"High quality asset bank in the making"}>
-        <p className='mt-3 small-info'>
-          We’ve created an easy to use platform to distribute product images, videos and texts for use in marketing campaigns.
+        <p className="mt-3 small-info">
+          We&apos;ve created an easy to use platform to distribute product images, videos and texts for use in marketing campaigns.
           This helps streamline the process of obtaining official and high quality digital elements a marketeer needs by making available all the necessary digital assets, easy to find and export.
         </p>
       </Paragraph>
@@ -296,17 +296,17 @@ const CaseStudy = () => {
       </div>
 
       <Paragraph title={"A new business arose"} info={"Competitive analysis"}>
-        <p className='mt-3 small-info'>
+        <p className="mt-3 small-info">
           This platform has evolved from a previously existing database which housed a lot of official mobile brands material for distribution to marketeers but it was confusing to use and unintuitive.
           Now it is user friendly and organized and could evolve into a marketplace or a bank for digital material of all sorts of brands ranging from small to big companies.
-          It’s competitors are google images and any search engine that provides access to publicly shared material. We made the difference by providing an easy and quick way to download and use high quality official material.
+          It&apos;s competitors are google images and any search engine that provides access to publicly shared material. We made the difference by providing an easy and quick way to download and use high quality official material.
         </p>
       </Paragraph>
 
-      <div className='vectorContainer1 mb-5'>
+      <div className="vectorContainer1 mb-5">
     
-          <div id="opportunities" className='Zindex'>
-          <div className='summaryContainer mt-5 mb-5'>
+          <div id="opportunities" className="Zindex">
+          <div className="summaryContainer mt-5 mb-5">
 
             <p className="small-info white mb-1">Opportunities and Challenges</p>
             <span className="w700 s33 roboto white">
@@ -321,7 +321,7 @@ const CaseStudy = () => {
           <CaseStudyCard title={"Opportunity #1"} info={"High quality assets"} text={"This platform can accommodate the need of high quality campaigns with wide range of reach supporting high budgets. This will attract corporations that have high standards on their deliverables."} />
           <CaseStudyCard title={"Opportunity #2"} info={"Quick campaign kick off"} text={"Having every asset at the reach of your fingertips creates a unique and optimized experience, enabling for frictionless delivery."} />
           <CaseStudyCard title={"Opportunity #3"} info={"Campaign cost efficiency "} text={"Some campaigns due to low budget deliver low quality assets. Now with a low cost and quick support there will be an opportunity to have a general increase in quality of every campaign without increasing the budget."} />
-          <CaseStudyCard title={"Opportunity #4"} info={"Performance marketing"} text={"We’ve researched that with high quality assets campaigns hit higher numbers in the performance metrics. Helping achieve better scores the clients KPI’s."} />
+          <CaseStudyCard title={"Opportunity #4"} info={"Performance marketing"} text={"We&apos;ve researched that with high quality assets campaigns hit higher numbers in the performance metrics. Helping achieve better scores the clients KPI&apos;s."} />
           <p className="w700 s33 roboto white mt-5 summaryContainer">
             Challenges
           </p >
@@ -336,9 +336,9 @@ const CaseStudy = () => {
    
       </div>
 
-      <Paragraph title={"Interviews & Surveys"} info={"We’ve contacted business managers and marketers"}>
-        <p className='mt-3 small-info'>
-          We’ve run interviews with representatives from the marketing industry, people from the business and marketeers. We’ve tackled usability issues and in general we’ve tried to give everyone a taste of the tool providing them with a prototype.
+      <Paragraph title={"Interviews & Surveys"} info={"We&apos;ve contacted business managers and marketers"}>
+        <p className="mt-3 small-info">
+          We&apos;ve run interviews with representatives from the marketing industry, people from the business and marketeers. We&apos;ve tackled usability issues and in general we&apos;ve tried to give everyone a taste of the tool providing them with a prototype.
         </p>
         <h2>Goals</h2>
         <ul>
@@ -352,15 +352,15 @@ const CaseStudy = () => {
 
 
 
-        <p className='mt-3 small-info'>
+        <p className="mt-3 small-info">
           All the answers were revieved and then submited on an online document and the team started the ideation for the next phase. About 25 people were interviewed from various backgrounds but mostly from the same industry.
         </p>
       </Paragraph>
       <br />
 
 
-      <Paragraph title={"Understanding the user"} info={"Gaining the end-user’s perspective"}>
-        <p className='mt-3 small-info '>
+      <Paragraph title={"Understanding the user"} info={"Gaining the end-user&apos;s perspective"}>
+        <p className="mt-3 small-info ">
           We created personas that have goals and characteristics representing the needs of the many.
         </p>
 
@@ -372,10 +372,10 @@ const CaseStudy = () => {
 
 
 
-      <div className='vectorContainer2 mb-5 mt-5'>
+      <div className="vectorContainer2 mb-5 mt-5">
         <div id="vector3">
 
-          <div className='summaryContainer mt-5 mb-5'>
+          <div className="summaryContainer mt-5 mb-5">
 
             <p className="small-info white mb-1">Wireframe, Prototype</p>
             <span className="w700 s33 roboto white">
@@ -385,7 +385,7 @@ const CaseStudy = () => {
             <p className="w700 s33 roboto white mt-5">
               Paper prototypes
             </p >
-            <p className='mt-3 small-info white'>
+            <p className="mt-3 small-info white">
               Aiming to facilitate fast brainstorming sessions, targeting the essentials with the team we relied on paper prototypes to express the main look and feel of the app.
             </p>
 
@@ -396,18 +396,18 @@ const CaseStudy = () => {
             <img className="uncontainedImages" src="/paperprotoype.jpg" alt="persona2" />
           </div>
 
-          <div className='summaryContainer mt-5 mb-5'>
+          <div className="summaryContainer mt-5 mb-5">
             <p className="w700 s33 roboto white mt-5">
               Visual design
             </p >
-            <p className='mt-3 small-info white'>
+            <p className="mt-3 small-info white">
               A design system was created with all the necessary components for the platform to support functional & internal consistency, reducing building time, allowing room for innovation and to have a strong brand.
             </p>
           </div>
 
 
 
-          <div className='designSystemDiv mb-5'>
+          <div className="designSystemDiv mb-5">
             {Mutables.CS1VisualDesignPhotos.map((img, idx) => {
               return <img key={idx} className="designSystemPhoto mb-5 " src={`/designSystem/${img}`} alt={img} />
             })}
@@ -420,13 +420,13 @@ const CaseStudy = () => {
 
       </div>
       <Paragraph title={"Making a new tool"} info={"CONCLUSION"}>
-        <p className='mt-3 small-info'>Design such a tool has it’s challenges. We faced some negative comments at the beginning, 
-          because the market hadn’t used a similar tools before. 
+        <p className="mt-3 small-info">Design such a tool has it&apos;s challenges. We faced some negative comments at the beginning, 
+          because the market hadn&apos;t used a similar tools before. 
           The employees were used to an outdated platform performing day to day tasks not supporting the extra features needed
            and not getting the desired value for it. Now with our business proposition we deliver the resources to do quick and 
            efficient work adding quality on the end result.</p>
 
-           <p className='mt-3 small-info'>
+           <p className="mt-3 small-info">
            A successful user experience is based on how many people like your app.
             Develop a strategy to focus on efficient methods and planning, then identify the best solution to meet your goals.
              A lot of companies want to create a good design. This is not as easy as it sounds.
@@ -436,13 +436,13 @@ const CaseStudy = () => {
 
       <Paragraph title={"What I could do differently?"}>
         <ul>
-          <li className='color484848'>
+          <li className="color484848">
          <b> More user research </b>
           </li>
-          <li className='color484848'>
+          <li className="color484848">
           <b> Have the platform be more accessible</b>
           </li >
-          <li className='color484848'>
+          <li className="color484848">
           <b> More iterations and more tests of the end result</b>
           </li>
         </ul>
@@ -450,7 +450,7 @@ const CaseStudy = () => {
       </Paragraph>
 
       <Paragraph title={"Disclaimer"}>
-            <p className='mt-3 small-info'>This project was done for <a style={{textDecoration:"underline"}} href="https://www.white-space.gr/" target="_blank" rel="noreferrer">Whitespace</a> which has the all the rights of the project.</p>
+            <p className="mt-3 small-info">This project was done for <a style={{textDecoration:"underline"}} href="https://www.white-space.gr/" target="_blank" rel="noreferrer">Whitespace</a> which has the all the rights of the project.</p>
       </Paragraph>
 
     </>
