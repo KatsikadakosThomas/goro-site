@@ -20,7 +20,19 @@ class HomeButton extends Component {
                 height:43px;
                 color:white;
                 cursor:pointer; 
-                padding:10px
+                padding:8px;
+                border:2px solid #4111C9;
+                transition:  background-color 300ms ease-out;
+            }
+            .button:hover{
+                background-color:white;
+
+                color:#4111C9;
+            }
+
+            .button:active{
+                background-color:#4111C9;
+                color:white;
             }
 
             `}

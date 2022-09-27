@@ -144,3 +144,26 @@ a {
 .error404{
   margin:auto;
 }
+
+.links{
+  margin-bottom:0;
+  cursor:pointer;
+  text-decoration: underline;
+  text-decoration-color: #C93BFF;
+
+  background: linear-gradient(to right, #C93BFF, #C93BFF 50%, black 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%; 
+  
+  transition:  background-position 275ms ease;
+
+}
+
+.links:hover{
+  color:#4a4a4a;
+  text-decoration-color: #bc0dff;
+  background-position: 0 100%;
+}

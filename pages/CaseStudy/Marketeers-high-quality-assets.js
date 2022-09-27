@@ -285,8 +285,9 @@ const CaseStudy = () => {
           spaceBetween={50}
           navigation
           slidesPerView={1}
+          loop={true}
           onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
+          // onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide><img alt="Cosmote-Slide1" src="/Cosmote-Slide1.jpg" style={{ objectFit: "contain", width: "100%" }}></img></SwiperSlide>
           <SwiperSlide><img alt="Cosmote-Slide2" src="/Cosmote-Slide2.png" style={{ objectFit: "cover", width: "100%" }}></img></SwiperSlide>

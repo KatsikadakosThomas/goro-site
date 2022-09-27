@@ -290,6 +290,7 @@ const CaseStudy = () => {
           navigation
           slidesPerView={1}
           onSlideChange={() => console.log('slide change')}
+          loop={true}
           onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide><img alt="Helios _guest_slide_1" src="/Helios_guest_slide_1.jpg" style={{ objectFit: "contain", width: "100%" }}></img></SwiperSlide>

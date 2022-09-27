@@ -1,9 +1,39 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Mutables from "./../mutables/index"
 import Link from "next/link"
 
 
 const Nav = () => {
+
+  const [show, setShow] = useState("show");
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (typeof window !== 'undefined') { 
+      console.log(window.scrollY);
+      if (window.scrollY > lastScrollY&window.scrollY>200) { // if scroll down hide the navbar
+        setShow("hide"); 
+      } else { // if scroll up show the navbar
+        setShow("show");  
+      }
+
+      // remember current page location to use in the next move
+      setLastScrollY(window.scrollY); 
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', controlNavbar);
+
+      // cleanup function
+      return () => {
+        window.removeEventListener('scroll', controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
+  
+  
   return (
 
     <>
@@ -15,47 +45,70 @@ const Nav = () => {
               min-height:80px;
               background-color:white;
               border-bottom: 1px solid #EBEBEB;
+              position:sticky;
+              top:0px;
+              z-index:4000;
+              
             }
 
-            .links{
-              margin-bottom:0;
-              cursor:pointer;
-              text-decoration: underline;
-              text-decoration-color: #C93BFF;
+            .hide{
+              animation: 0.5s fadeIn;
+              animation-fill-mode: forwards;            
+            }
+            @keyframes fadeIn {
+              0% {
+                opacity: 1;
+              }
+              100% {
+                visibility: hidden;
+                opacity: 0;
+              }
             }
 
-            .links:hover{
-              color:#4a4a4a;
-              text-decoration-color: #bc0dff;
-              transform: scale(1.01);
+            @keyframes fadeOut {
+              0% {
+                opacity: 0;
+              }
+              100% {
+                visibility: visible;
+                opacity: 1;
+              }
+            }
+            .show{
+              animation: 0.5s fadeOut;
+              animation-fill-mode: forwards;  
             }
 
             .logo{
-              font-family:Inter;
+              font-family: 'Inter', sans-serif;
               font-style:normal;
               position: relative;
               display: inline-block;
               overflow: hidden;
+              
               background: linear-gradient(to right, #C93BFF, #C93BFF 50%, black 50%);
-
               background-clip: text;
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
               background-size: 200% 100%;
-              background-position: 100%;
-              transition: background-position 275ms ease;
+              background-position: 100%; 
+              transform: scale(1);
+              transition: transform 100ms ease, background-position 275ms ease;
+
+
             }
 
             .logo:hover{
               cursor:pointer;
               transform: scale(1.06);
               background-position: 0 100%;
+        
             }
 
             `}
       </style>
 
-      <header className='Nav-Box d-flex inter-font'>
+      <header className={`Nav-Box d-flex inter-font ${show}`}>
 
         {/* inner container */}
         <div className="container p-3 d-flex  justify-content-between align-items-md-center flex-column flex-md-row" >
@@ -69,7 +122,11 @@ const Nav = () => {
           </Link>
           <nav className='d-flex justify-content-between flex-column flex-md-row align-items-md-center mt-md-0 mt-5'>
             {Mutables.nav.map((navItem) => {
-              return <a key={navItem.name+"a"} href={navItem.url}  target="_blank" rel="noreferrer"><p className='me-5 links mt-md-0 mt-3' key={navItem.name}>{navItem.name}</p></a>
+             return navItem.type==="simple"?
+             <a className='me-5 links mt-md-0 mt-3' key={navItem.name+"a"} href={navItem.url}  target="_blank" rel="noreferrer">{navItem.name}</a>
+            :navItem.renderer({})
+          
+        
             })}
           </nav>
 
