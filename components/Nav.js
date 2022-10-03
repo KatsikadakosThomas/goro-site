@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import Mutables from "./../mutables/index"
-import Link from "next/link"
+import Mutables from "./../mutables/index";
+import Link from "next/link";
+import Burger from "./Burger";
 
-
-const Nav = () => {
+const Nav = (props) => {
 
   const [show, setShow] = useState("show");
   const [lastScrollY, setLastScrollY] = useState(0);
+
 
   const controlNavbar = () => {
     if (typeof window !== 'undefined') { 
@@ -33,6 +34,8 @@ const Nav = () => {
     }
   }, [lastScrollY]);
   
+
+
   
   return (
 
@@ -105,13 +108,26 @@ const Nav = () => {
         
             }
 
+            @media screen and (min-width: 759px) {
+              .toggle-btn {
+                display: none;
+              }
+            }
+            @media screen and (max-width: 759px) {
+              .toolbar-navigation-items {
+                display: none !important;
+              }
+            }
+
             `}
       </style>
 
       <header className={`Nav-Box d-flex inter-font ${show}`}>
 
         {/* inner container */}
-        <div className="container p-3 d-flex  justify-content-between align-items-md-center flex-column flex-md-row" >
+        <div className="container p-3 d-flex  justify-content-between align-items-md-center flex-row" >
+
+       
 
             <Link href="/">
           <div className='d-flex align-items-md-center flex-column logo'>
@@ -120,7 +136,12 @@ const Nav = () => {
             <p className='s15 w400 mb-0'>Product Designer</p>
           </div>
           </Link>
-          <nav className='d-flex justify-content-between flex-column flex-md-row align-items-md-center mt-md-0 mt-5'>
+
+          <div className="toggle-btn mt-2 me-3">
+    
+      <Burger click={props.Click} />
+      </div>
+          <nav className='d-flex justify-content-between flex-column flex-md-row align-items-md-center mt-md-0 mt-5 toolbar-navigation-items'>
             {Mutables.nav.map((navItem) => {
              return navItem.type==="simple"?
              <a className='me-5 links mt-md-0 mt-3' key={navItem.name+"a"} href={navItem.url}  target="_blank" rel="noreferrer">{navItem.name}</a>

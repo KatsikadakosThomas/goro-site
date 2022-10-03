@@ -12,8 +12,8 @@ export default class Mutables {
         {name:"Work",url:"",type:"render",
         renderer:({link})=>{
             return(
-                <div class="dropdown">
-                <a class="me-5 links mt-md-0 mt-3" href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="dropdown ">
+                <a class="me-5 links mt-3" href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                   Work
                 </a>
               
