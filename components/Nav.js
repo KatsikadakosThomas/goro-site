@@ -108,12 +108,12 @@ const Nav = (props) => {
         
             }
 
-            @media screen and (min-width: 759px) {
+            @media screen and (min-width: 771px) {
               .toggle-btn {
                 display: none;
               }
             }
-            @media screen and (max-width: 759px) {
+            @media screen and (max-width: 770px) {
               .toolbar-navigation-items {
                 display: none !important;
               }
@@ -141,7 +141,7 @@ const Nav = (props) => {
     
       <Burger click={props.Click} />
       </div>
-          <nav className='d-flex justify-content-between flex-column flex-md-row align-items-md-center mt-md-0 mt-5 toolbar-navigation-items'>
+          <nav className='d-flex justify-content-between flex-row align-items-md-center mt-md-0 mt-5 toolbar-navigation-items'>
             {Mutables.nav.map((navItem) => {
              return navItem.type==="simple"?
              <a className='me-5 links mt-md-0 mt-3' key={navItem.name+"a"} href={navItem.url}  target="_blank" rel="noreferrer">{navItem.name}</a>

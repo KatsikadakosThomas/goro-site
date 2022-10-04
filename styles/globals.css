@@ -30,6 +30,14 @@ body {
   font-weight: 300;
 }
 
+
+@media only screen and (max-width: 320px) {
+  .small-info {
+    font-size:14px; 
+    }
+  
+  }
+
 .white{
   color:white;
 }
@@ -101,6 +109,26 @@ a {
   margin:auto;
 
 }
+@media only screen and (max-width: 785px) {
+  .titleContainer {
+    width:560px;
+  }
+
+}
+@media only screen and (max-width: 570px) {
+  .titleContainer {
+    padding: 90px 0px;
+    width:360px;
+  }
+
+}
+@media only screen and (max-width: 370px) {
+  .titleContainer {
+    width:260px;
+  }
+
+}
+
 
 @media only screen and (max-width: 1030px) {
   .summaryContainer {
@@ -115,6 +143,20 @@ a {
     }
 
 }
+
+@media only screen and (max-width: 480px) {
+  .summaryContainer {
+      width:360px;
+    }
+
+}
+@media only screen and (max-width: 370px) {
+  .summaryContainer {
+      width:260px;
+    }
+
+}
+
 
 
 .uncontainedImages{
@@ -135,6 +177,26 @@ a {
   }
 
 }
+
+@media only screen and (max-width: 570px) {
+  .uncontainedImages {
+      width:460px;
+    }
+  
+  }
+  @media only screen and (max-width: 470px) {
+    .uncontainedImages {
+        width:360px;
+      }
+    
+    }
+
+    @media only screen and (max-width: 370px) {
+      .uncontainedImages {
+          width:260px;
+        }
+      
+      }
 
 .color484848{
   color:#484848;
@@ -166,4 +228,54 @@ a {
   color:#4a4a4a;
   text-decoration-color: #bc0dff;
   background-position: 0 100%;
+}
+
+#tableContainer{
+  width:934px;
+  margin:auto; 
+}
+
+.firsttd{
+  white-space: nowrap;
+  padding-right: 100px;
+}
+
+@media only screen and (max-width: 1030px) {
+  #tableContainer {
+      width:730px;
+    }
+
+}
+@media only screen and (max-width: 785px) {
+  #tableContainer {
+      width:530px;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+  #tableContainer {
+      width:484px;
+    }
+
+}
+@media only screen and (max-width: 496px) {
+  #tableContainer {
+      width:354px;
+    }
+
+}
+@media only screen and (max-width: 361px) {
+  #tableContainer {
+      width:260px;
+    }
+    .firsttd{
+        padding-right: 10px;
+      }
+    li{
+      font-size:14px;
+    }
+    td{
+      font-size:14px;
+    }
+
 }

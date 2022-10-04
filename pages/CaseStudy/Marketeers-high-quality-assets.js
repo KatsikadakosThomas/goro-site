@@ -40,6 +40,14 @@ const CaseStudy = () => {
                 background-position: center;
               }
 
+              @media only screen and (max-width: 600px) {
+         .headerPhoto {
+          height:447.75px;
+          background-position: right center;
+            }
+ 
+           }
+
              
 
               td{
@@ -48,12 +56,6 @@ const CaseStudy = () => {
                 padding-bottom:14px; 
               }
               
-              .firsttd{
-                white-space: nowrap;
-                padding-right: 100px;
-              
-
-              }
               ul{
                 padding-left: 1.1rem;
               }
@@ -72,7 +74,7 @@ const CaseStudy = () => {
               #vector1{
             
                 width: 100%;
-                height:99%;
+                height:99.4%;
                 top:0;
                 left:0;
                 z-index: -5;
@@ -80,7 +82,7 @@ const CaseStudy = () => {
               
 
                 background: #6BBAEC;
-                clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
+                clip-path: polygon(0 0, 100% 0.5%, 100% 100%, 0% 100%);
               }
 
                 #vector2{
@@ -93,7 +95,7 @@ const CaseStudy = () => {
               left:0;
 
               background: #69AC4E;
-              clip-path: polygon(0 2%, 100% 0, 100% 98%, 0% 100%);
+              clip-path: polygon(0 0.5%, 100% 0, 100% 99%, 0% 100%);
               }
               .vectorContainer1{
             position: relative;
@@ -107,7 +109,7 @@ const CaseStudy = () => {
             height:99.4%;
             top:0;
             left:0;
-            z-index: 5;
+            z-index: -5;
             position: absolute;
           
 
@@ -124,7 +126,7 @@ const CaseStudy = () => {
           
           width: 100%;
           height:100%;
-          z-index: 3;
+          z-index: -6;
           position: absolute;
           top:0;
           left:0;
@@ -139,26 +141,11 @@ const CaseStudy = () => {
           .vectorContainer2{
             position: relative;
             width: 100%;
-            height: 6404px;
+            padding:50px 0px;
+         
           }
 
-        #tableContainer{
-          width:934px;
-          margin:auto; 
-        }
 
-        @media only screen and (max-width: 1030px) {
-          #tableContainer {
-              width:730px;
-            }
- 
-        }
-        @media only screen and (max-width: 785px) {
-          #tableContainer {
-              width:530px;
-            }
- 
-        }
 
 
           .designSystemPhoto{
@@ -181,6 +168,34 @@ const CaseStudy = () => {
             }
  
         }
+        @media only screen and (max-width: 765px) {
+            .designSystemDiv {
+              width:584px;
+            }
+ 
+        }
+        @media only screen and (max-width: 600px) {
+            .designSystemDiv {
+              width:484px;
+            }
+ 
+        }
+        @media only screen and (max-width: 495px) {
+            .designSystemDiv {
+              width:384px;
+            }
+ 
+        }
+
+        @media only screen and (max-width: 395px) {
+            .designSystemDiv {
+              width:284px;
+              padding:30px;
+            }
+ 
+        }
+
+
 
             `}
       </style>
@@ -322,7 +337,7 @@ const CaseStudy = () => {
           <CaseStudyCard title={"Opportunity #1"} info={"High quality assets"} text={"This platform can accommodate the need of high quality campaigns with wide range of reach supporting high budgets. This will attract corporations that have high standards on their deliverables."} />
           <CaseStudyCard title={"Opportunity #2"} info={"Quick campaign kick off"} text={"Having every asset at the reach of your fingertips creates a unique and optimized experience, enabling for frictionless delivery."} />
           <CaseStudyCard title={"Opportunity #3"} info={"Campaign cost efficiency "} text={"Some campaigns due to low budget deliver low quality assets. Now with a low cost and quick support there will be an opportunity to have a general increase in quality of every campaign without increasing the budget."} />
-          <CaseStudyCard title={"Opportunity #4"} info={"Performance marketing"} text={"We&apos;ve researched that with high quality assets campaigns hit higher numbers in the performance metrics. Helping achieve better scores the clients KPI&apos;s."} />
+          <CaseStudyCard title={"Opportunity #4"} info={"Performance marketing"} text={"We've researched that with high quality assets campaigns hit higher numbers in the performance metrics. Helping achieve better scores the clients KPI's."} />
           <p className="w700 s33 roboto white mt-5 summaryContainer">
             Challenges
           </p >
@@ -337,7 +352,7 @@ const CaseStudy = () => {
    
       </div>
 
-      <Paragraph title={"Interviews & Surveys"} info={"We&apos;ve contacted business managers and marketers"}>
+      <Paragraph title={"Interviews & Surveys"} info={"We have contacted business managers and marketers"}>
         <p className="mt-3 small-info">
           We&apos;ve run interviews with representatives from the marketing industry, people from the business and marketeers. We&apos;ve tackled usability issues and in general we&apos;ve tried to give everyone a taste of the tool providing them with a prototype.
         </p>
@@ -360,7 +375,7 @@ const CaseStudy = () => {
       <br />
 
 
-      <Paragraph title={"Understanding the user"} info={"Gaining the end-user&apos;s perspective"}>
+      <Paragraph title={"Understanding the user"} info={"Gaining the end-user's perspective"}>
         <p className="mt-3 small-info ">
           We created personas that have goals and characteristics representing the needs of the many.
         </p>
@@ -374,7 +389,7 @@ const CaseStudy = () => {
 
 
       <div className="vectorContainer2 mb-5 mt-5">
-        <div id="vector3">
+       
 
           <div className="summaryContainer mt-5 mb-5">
 
@@ -416,7 +431,7 @@ const CaseStudy = () => {
 
 
 
-        </div>
+          <div id="vector3"> </div>
         <div id="vector4"></div>
 
       </div>

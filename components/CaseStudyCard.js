@@ -1,9 +1,9 @@
 const CaseStudyCard = ({ title, info, text }) => {
 
     return (
-      <div className='summaryContainer mt-5 mb-5'>
+      <div className='cardContainer mt-5 mb-5'>
         <p className="small-info">{info}</p>
-        <span className="s33 roboto-font">
+        <span className="title roboto-font">
           {title}
         </span >
         <p className='mt-3 small-info'>
@@ -11,7 +11,12 @@ const CaseStudyCard = ({ title, info, text }) => {
         </p>
         <style jsx>
           {`
-          .summaryContainer
+
+          .title{
+            font-size:33px;
+          }
+
+          .cardContainer
           {
                    width:760px;
                   margin:auto;
@@ -21,9 +26,33 @@ const CaseStudyCard = ({ title, info, text }) => {
                   }
   
                   @media only screen and (max-width: 1030px) {
-              .summaryContainer {
+              .cardContainer {
                 width:560px;
               }
+              @media only screen and (max-width: 785px) {
+              .cardContainer {
+                  width:460px;
+                }
+
+            }
+
+            @media only screen and (max-width: 480px) {
+              .cardContainer {
+                  width:360px;
+                }
+
+            }
+            @media only screen and (max-width: 380px) {
+              .cardContainer {
+                padding:30px 20px 30px 20px;
+                  width:260px;
+                }
+
+                .title{
+            font-size:28px;
+            }
+
+            }
    
           }
               `}

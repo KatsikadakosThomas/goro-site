@@ -37,7 +37,7 @@ const Drawer = (props) => {
             right:10px;
             top:10px;
         }
-        @media screen and (min-width: 759px) {
+        @media screen and (min-width: 770px) {
         .drawer {
             display: none;
         }

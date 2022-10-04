@@ -39,6 +39,13 @@ const CaseStudy = () => {
                 background-image:url(${Mutables.caseStudy[1].heroPhoto});
                 background-position: center;
               }
+              @media only screen and (max-width: 600px) {
+         .headerPhoto {
+          height:447.75px;
+          background-position: 90% 30%;
+            }
+ 
+           }
 
               
 
@@ -48,12 +55,7 @@ const CaseStudy = () => {
                 padding-bottom:14px; 
               }
               
-              .firsttd{
-                white-space: nowrap;
-                padding-right: 100px;
-              
-
-              }
+          
               ul{
                 padding-left: 1.1rem;
               }
@@ -142,23 +144,7 @@ const CaseStudy = () => {
             height: 6404px;
           }
 
-        #tableContainer{
-          width:934px;
-          margin:auto; 
-        }
-
-        @media only screen and (max-width: 1030px) {
-          #tableContainer {
-              width:730px;
-            }
- 
-        }
-        @media only screen and (max-width: 785px) {
-          #tableContainer {
-              width:530px;
-            }
- 
-        }
+      
 
 
           .designSystemPhoto{
