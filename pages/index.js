@@ -42,6 +42,12 @@ export default function Home() {
       <Head>
         <title>Gkorovelis Dimitris Portofolio</title>
         <meta property="og:title" content="Gkorovelis Dimitris Portofolio" />
+        
+        <meta property="og:description" content="I am a Product Designer (Web) and I've led the design of digital products 
+                                                and websites for businesses and large corporations.
+                                                I believe that great design comes from great observation. So research and attention to detail 
+                                                go hand-in-hand with my work."/>
+
         <meta property="og:type" content="website" />
         <meta property="og:url" content={router.asPath} />
         <meta property="og:image" content="/Ellipse 1.png" />
@@ -82,7 +88,7 @@ export default function Home() {
 
         <section className='text-center mt-10 preFooter container'>
           <h3>Let’s meet for a coffee!</h3>
-          <p className='small-info mt-3'> I am currently in Athens, Greece making users lives easier for Atos and my clients. Soon to relocate to Copenhagen, Denmark 🇩🇰 and expand my horizons.<br /> Will you be around? Text me.</p>
+          <p className='small-info mt-3'> I am currently making users lives easier for Atos and my clients in Copenhagen, Denmark 🇩🇰 where I have recently relocated.<br /> Will you be around? Text me.</p>
           <p className='roboto-font mt-3'><b>UX Design is a lot more fun when everyone is included.</b> </p>
         </section>
 

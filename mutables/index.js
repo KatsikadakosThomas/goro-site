@@ -8,7 +8,7 @@ export default class Mutables {
 
     static nav=[
         {name:"Linkedin",url:"https://www.linkedin.com/in/gorodimitris/",type:"simple"},
-        {name:"CV",url:"",type:"simple"},
+        {name:"CV",url:"https://represent.io/gorodimitris",type:"simple"},
         {name:"Work",url:"",type:"render",
         renderer:({link})=>{
             return(
@@ -19,7 +19,7 @@ export default class Mutables {
               
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     {this.caseStudy.map((caseStudy,idx)=>{
-                        return<Link href={`/CaseStudy/${caseStudy.slug}`}><li key={caseStudy.slug} class="dropdown-item pe-auto" style={{cursor:"pointer"}}>{`Case Study ${idx+1}`}</li></Link> 
+                        return<Link href={`/CaseStudy/${caseStudy.slug}`}><li key={caseStudy.slug} class="dropdown-item pe-auto" style={{cursor:"pointer"}}>{idx==0?"Asset bank":"Concierge services"}</li></Link> 
                     })}
                 </ul>
               </div>
@@ -33,15 +33,15 @@ export default class Mutables {
         {type:"UI/UX DESIGN / STRATEGY",
         title:"Marketeers have access to high quality official assets for campaigns",
         subTitle:"Making a easy to use UI for marketeers",
-        photo:"/Frame190.png",
-        heroPhoto:"/Frame153.jpg",
+        photo:"/Frame190.webp",
+        heroPhoto:"/Frame153.webp",
         slug:"Marketeers-high-quality-assets"
         },
         {type:"UI/UX DESIGN / STRATEGY",
         title:"Concierge services for airbnb apartments",
         subTitle:"Accommodation leveled up",
-        photo:"/Frame193.png",
-        heroPhoto:"/Frame154.jpg",
+        photo:"/Frame193.webp",
+        heroPhoto:"/Frame154.webp",
         slug:"airbnb-apartments"
         }
     ]

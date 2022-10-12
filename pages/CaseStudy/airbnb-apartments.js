@@ -338,7 +338,7 @@ const CaseStudy = () => {
         </Paragraph>
 
         <div  style={{ margin: "auto", textAlign: "center" }}>
-        <img className="uncontainedImages mb-4" src="/HeliosGuest-Visualdesign.jpg" alt="HeliosGuest-Visualdesign" />
+        <img className="uncontainedImages mb-4" src="/HeliosGuest-Visualdesign.webp" alt="HeliosGuest-Visualdesign" />
       </div>
 
 

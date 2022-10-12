@@ -139,7 +139,7 @@ a {
 
 @media only screen and (max-width: 785px) {
   .summaryContainer {
-      width:460px;
+      width:430px;
     }
 
 }
@@ -148,8 +148,12 @@ a {
   .summaryContainer {
       width:360px;
     }
+  .s33{
+    font-size:28px;
+  }
 
 }
+
 @media only screen and (max-width: 370px) {
   .summaryContainer {
       width:260px;
@@ -256,11 +260,17 @@ a {
   #tableContainer {
       width:484px;
     }
+    .firsttd{
+      padding-right: 30px;
+    }
 
 }
 @media only screen and (max-width: 496px) {
   #tableContainer {
       width:354px;
+    }
+    .firsttd{
+      padding-right: 20px;
     }
 
 }

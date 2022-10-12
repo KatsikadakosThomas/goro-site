@@ -304,7 +304,7 @@ const CaseStudy = () => {
           onSlideChange={() => console.log('slide change')}
           // onSwiper={(swiper) => console.log(swiper)}
         >
-          <SwiperSlide><img alt="Cosmote-Slide1" src="/Cosmote-Slide1.jpg" style={{ objectFit: "contain", width: "100%" }}></img></SwiperSlide>
+          <SwiperSlide><img alt="Cosmote-Slide1" src="/Cosmote-Slide1.webp" style={{ objectFit: "contain", width: "100%" }}></img></SwiperSlide>
           <SwiperSlide><img alt="Cosmote-Slide2" src="/Cosmote-Slide2.png" style={{ objectFit: "cover", width: "100%" }}></img></SwiperSlide>
           <SwiperSlide><img alt="Cosmote-Slide3" src="/Cosmote-Slide3.jpg" style={{ objectFit: "contain", width: "100%" }}></img></SwiperSlide>
           <SwiperSlide><img alt="Cosmote-Slide4" src="/Cosmote-Slide4.png" style={{ objectFit: "contain", width: "100%" }}></img></SwiperSlide>
@@ -382,8 +382,8 @@ const CaseStudy = () => {
 
       </Paragraph>
       <div style={{ margin: "auto", textAlign: "center" }}>
-        <img className="uncontainedImages mb-4" src="/Cosmote-Persona-Pic01.jpg" alt="persona1" />
-        <img className="uncontainedImages" src="/Cosmote-Persona-Pic02.png" alt="persona2" />
+        <img className="uncontainedImages mb-4" src="/Cosmote-Persona-Pic01.webp" alt="persona1" />
+        <img className="uncontainedImages" src="/Cosmote-Persona-Pic02.webp" alt="persona2" />
       </div>
 
 
@@ -409,7 +409,7 @@ const CaseStudy = () => {
 
 
           <div style={{ margin: "auto", textAlign: "center" }}>
-            <img className="uncontainedImages" src="/paperprotoype.jpg" alt="persona2" />
+            <img className="uncontainedImages" src="/paperprotoype.webp" alt="persona2" />
           </div>
 
           <div className="summaryContainer mt-5 mb-5">
