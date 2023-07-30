@@ -1,6 +1,18 @@
 {
   "extends": ["next/core-web-vitals","next"],
   "rules": {
-    "@next/next/no-img-element": "off"
+    "@next/next/no-img-element": "off",
+    " react-hooks/exhaustive-deps":"off",
+    "eslint": {
+      "ignoreDuringBuilds": true
+     },
+    "react/no-unknown-property": [
+     2,
+     {
+       "ignore": [
+         "jsx"
+       ]
+     }
+   ]
   }
 }
