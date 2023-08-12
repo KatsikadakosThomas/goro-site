@@ -67,12 +67,11 @@ export default function Home() {
               </div>
 
               <p className="p-color w300 roboto-font mt-3">
-                I am a Product Designer (Web) and I&apos;ve led the design of digital products and websites for businesses and large corporations.
-                I believe that great design comes from great observation. So research and attention to detail go hand-in-hand with my work.
+              With 6+ years as a Product Designer & UX Designer, I blend creativity and problem-solving to make technology accessible, meaningful, and memorable.
               </p>
 
               <p className="p-color w300 roboto-font">
-                I always loved two things, 🎨️ and 🖥️. After many years those things became a passion for design and technology. As a Visual and Interaction designer in ATOS, I contribute to a very skillful agile team of developers to make usable, accessibile and functional web products.
+               My expertise includes leading teams, conducting user research and testing, and designing systems that users love. Connect with me to create impact together!
               </p>
 
             </article>
@@ -87,8 +86,8 @@ export default function Home() {
         </section>
 
         <section className='text-center mt-10 preFooter container'>
-          <h3>Let’s meet for a coffee!</h3>
-          <p className='small-info mt-3'> I am currently making users lives easier for Atos and my clients in Copenhagen, Denmark 🇩🇰 where I have recently relocated.<br /> Will you be around? Text me.</p>
+          <h3>Let&apos;vs meet for a coffee!</h3>
+          <p className='small-info mt-3'> I settled in Copenhagen, Denmark 🇩🇰 and I&apos;am passionately involved in product design at PSQR. My mission is to introduce sustainability solutions to businesses, always with a user-centric approach. If you are nearby, let&apos;vs connect and discuss the impact of thoughtful design.<br/> Send me a message!</p>
           <p className='roboto-font mt-3'><b>UX Design is a lot more fun when everyone is included.</b> </p>
         </section>
 
