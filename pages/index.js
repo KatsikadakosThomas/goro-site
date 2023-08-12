@@ -87,7 +87,7 @@ export default function Home() {
 
         <section className='text-center mt-10 preFooter container'>
           <h3>Let&apos;vs meet for a coffee!</h3>
-          <p className='small-info mt-3'> I settled in Copenhagen, Denmark 🇩🇰 and I&apos;am passionately involved in product design at PSQR. My mission is to introduce sustainability solutions to businesses, always with a user-centric approach. If you are nearby, let&apos;vs connect and discuss the impact of thoughtful design.<br/> Send me a message!</p>
+          <p className='small-info mt-3'> I settled in Copenhagen, Denmark 🇩🇰 and I&apos;am passionately involved in product design at PSQR. My mission is to introduce sustainability solutions to businesses, always with a user-centric approach. If you are nearby, let&apos;s connect and discuss the impact of thoughtful design.<br/> Send me a message!</p>
           <p className='roboto-font mt-3'><b>UX Design is a lot more fun when everyone is included.</b> </p>
         </section>
 
