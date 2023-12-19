@@ -36,13 +36,13 @@ const CaseStudy = () => {
               .headerPhoto{
                 width:100%;
                 height:547.75px;
-                background-image:url(${Mutables.caseStudy[1].heroPhoto});
+                background-image:url(${Mutables.caseStudy[0].heroPhoto});
                 background-position: center;
               }
               @media only screen and (max-width: 600px) {
          .headerPhoto {
           height:447.75px;
-          background-position: 30% center;
+          background-position: 20% center;
             }
  
            }
@@ -167,6 +167,14 @@ const CaseStudy = () => {
             }
  
         }
+        video {
+  width:100%;
+
+}
+.videoContainer{
+  max-width:600px;
+
+}
 
             `}
       </style>
@@ -188,9 +196,9 @@ const CaseStudy = () => {
 
       <header className="headerPhoto mb-5">
         <div className="titleContainer">
-          <h1 className="w900 white dropShadow">{Mutables.caseStudy[1].title}</h1>
-          <h3 className="white dropShadow">{Mutables.caseStudy[1].subTitle}</h3>
-          <p className="w300 white dropShadow">{Mutables.caseStudy[1].type}</p>
+          <h1 className="w900 white dropShadow">{Mutables.caseStudy[0].title}</h1>
+          <h3 className="white dropShadow">{Mutables.caseStudy[0].subTitle}</h3>
+          <p className="w300 white dropShadow">{Mutables.caseStudy[0].type}</p>
         </div>
       </header>
 
@@ -199,52 +207,27 @@ const CaseStudy = () => {
           <tbody>
             <tr>
               <td className="firsttd">
-                <b>Problem</b>
+                <b>Industry</b>
               </td>
               <td>
-                Need way to automate check-in, sell products and help appartments visitors on airbnb appartments before they arrive
+              Qualitative Research on Business User Experience
               </td>
             </tr>
             <tr>
               <td className="firsttd">
-                <b> Define</b>
+                <b> Client</b>
               </td>
               <td>
-                <ul>
-                  <li>
-                    <b>Check in</b> with physical presence of the host  <b> is very time consuming</b>
-                  </li>
-                  <li>
-                    <b> Lack of a way to sell services</b> like laundry, order cleaning, order breakfast or a book taxi
-                  </li>
-                  <li>
-                    Visitors don&apos;t have a quick way to<b> call greek emergency numbers</b>
-                  </li>
-                  <li>
-                    House appliances are hard to operate and<b>printed manuals are not available</b>
-                  </li>
-
-                </ul>
-
+              Customer Trend
               </td>
             </tr>
-            <tr>
-              <td className="firsttd">
-                <b> Ideate</b>
-              </td>
-              <td>
-                Add right after check in the option for online check in.
-                Include a marketplace with services and everyday products all available for purchace before arrival.
-                Have a persistent button in the home screen with quick call functionality to fire dept. police or ambulance.
-                Include pdfs inside the platform with all the user manuals and guides on how to use house appliances.
-              </td>
-            </tr>
+      
             <tr>
               <td className="firsttd">
                 <b> Role</b>
               </td>
               <td>
-                Ui/UX design, Product design
+              Strategy, UI/UX Design, Product Design
               </td>
             </tr>
             <tr>
@@ -252,7 +235,7 @@ const CaseStudy = () => {
                 <b>  Project time</b>
               </td>
               <td>
-                3 months
+                4 Months
               </td>
             </tr>
 
@@ -261,125 +244,118 @@ const CaseStudy = () => {
         </table>
       </div>
 
-      <Paragraph title={"HELP TOURISTS ACHIEVE A MORE ENJOYABLE EXPERIENCE DURING THEIR STAY"} info={"Summary"}>
+      <Paragraph title={"Enhancing Business experience through end user insights"} info={"Summary"}>
         <p className="mt-3 small-info">
-          This companion app was created with a view to enhance the stay of tourists booking short term stay in Greece by providing concierge services.
-          With a connection to individual apartments with specific services available to each one of them the user can gain access to smart features,
-          early check in, market items and direct communication with the host.
+        This project focused on creating a seamless experience for end users , leveraging human-centered design principles. By deeply understanding user needs and behaviour, we developed a platform that is intuitive, efficient, and engaging. Our approach involved creating responsive, minimalistic designs that are easy to navigate, making the user&apos;s interaction with the application effortless and enjoyable.
         </p>
       </Paragraph>
 
-      <div id="carousel">
-        <Swiper
-          modules={[Navigation]}
-          spaceBetween={50}
-          navigation
-          slidesPerView={1}
-          onSlideChange={() => console.log('slide change')}
-          loop={true}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
-          <SwiperSlide><img alt="Helios _guest_slide_1" src="/Helios_guest_slide_1.jpg" style={{ objectFit: "contain", width: "100%" }}></img></SwiperSlide>
-          <SwiperSlide><img alt="Helios _guest_slide_2" src="/Helios_guest_slide_2.jpg" style={{ objectFit: "cover", width: "100%" }}></img></SwiperSlide>
-        </Swiper>
+      <div className='videoContainer'  style={{ margin: "auto", textAlign: "center" }}>
+<video  src="/swipe_video.mp4" controls loop autoPlay muted ></video>
+  </div>
+  <div style={{width:"100%",marginTop:"90px"}}></div>
+
+      <div  style={{ margin: "auto", textAlign: "center"}}>
+        <img className="uncontainedImages mb-4" src="/swipe_photo_1.jpg" alt="PaperPrototype" />
       </div>
 
-      <Paragraph title={"The competition was on the rise"} info={"COMPETITIVE ANALYSIS"}>
+
+      <Paragraph title={"Navigating Business UX Landscape"} info={"COMPETITIVE ANALYSIS"}>
         <p className="mt-3 small-info">
-          Tourism in Greece is on the rise and concierge services happen to be one of most investing sectors that can help hosts stand out.
-          Villas and hotels that I came across with in my research were providing car services, contactless check in and many more conveniences.
-          With this solution we&apos;ve created a central point of reference for all necessary interactions.
+        In today&apos;s competitive business environment, user experience is a key differentiator. Our research revealed that businesses are increasingly investing in UX to enhance usability and customer satisfaction.
+         We identified key trends such as intuitive interfaces and streamlined processes that our solution embodies, setting a new standard in business UX.
         </p>
       </Paragraph>
 
       <div style={{backgroundColor:"#F8F4F3",padding:"50px 0px"}}>
         <Paragraph title={"How is works"} info={"USER JOURNEY"}>
           <p className="mt-3 small-info">
-            We&apos;ve written down the actions needed to make a reservation and in which point the app is engaged.
-            This served as an access point to every available service for the visitors before and after their arrival.
+          Our process begins with understanding user actions required, integrating the app to facilitate these tasks. This creates a cohesive journey from initial engagement to task completion."
           </p>
         </Paragraph>
         <div style={{ margin: "auto", textAlign: "center" }}>
-        <img className="uncontainedImages mb-4" src="/HeliosGuest-Journeymap1.png" alt="HeliosGuest-Journeymap1" />
+        <img className="uncontainedImages mb-4" src="/swipe_photo_2.jpg" alt="HeliosGuest-Journeymap1" />
       </div>
       </div>
 
 
       <Paragraph title={"Looking through the eyes of our user"} info={"EMPATHISE STEP"}>
         <p className="mt-3 small-info ">
-        Our persona is the person we see as the our future user of the app. 
-        I&apos;ve made some research and after some private interviews i&apos;ve created the profile of a typical guest.
+        Our persona is the person we see as the our future user of the app. I&apos;ve made some research and after some private interviews i&apos;ve created the profile of a typical guest.
         </p>
       </Paragraph>
 
       <div style={{ margin: "auto", textAlign: "center" }}>
-        <img className="uncontainedImages mb-4" src="/HeliosGuest-Persona-Pic01.jpg" alt="HeliosGuest-Persona-Pic01" />
+        <img className="uncontainedImages mb-4" src="/swipe_photo_3.jpg" alt="HeliosGuest-Persona-Pic01" />
       </div>
+      <div style={{ margin: "auto", textAlign: "center" }}>
+        <img className="uncontainedImages mb-4" src="/swipe_photo_4.jpg" alt="HeliosGuest-Persona-Pic01" />
+      </div>
+      <div className="mt-5" style={{backgroundColor:"#C6CFD6",padding:"50px 0px"}}>
 
-      <div className="mt-5" style={{backgroundColor:"#F0B263",padding:"50px 0px"}}>
+        <Paragraph info={"PROTOTYPE"} title={"Innovative Prototyping for User Engagement"} />
 
-        <Paragraph info={"WIREFRAME, PROTOTYPE"} title={"Creating the app structure from the beginning"} />
-
-
-        <Paragraph title={"Paper prototypes"}>
+        <Paragraph title={"Visual design"}>
       <p className="mt-3 small-info">
-        Aiming to facilitate fast brainstorming sessions we relied on paper prototypes to express the main structure and use of the app.
+      Aesthetic and Functional Design Approach
         </p>
         </Paragraph>
 
+
         <div  style={{ margin: "auto", textAlign: "center" }}>
-        <img className="uncontainedImages mb-4" src="/paperprotoype.webp" alt="PaperPrototype" />
+        <img className="uncontainedImages mb-4" src="/swipe_long.webp" alt="visualDesign" />
       </div>
 
-      <Paragraph title={"Visual design"}>
+      <Paragraph title={"User testing session"}>
       <p className="mt-3 small-info">
-      Design template ware created with all the necessary components for the platform.
+      We run a user testing session with 10 participants to get valuable insights.
         </p>
         </Paragraph>
+        <div  style={{ margin: "auto", textAlign: "center",borderRadius:"50px" }}>
+        <img className="uncontainedImages mb-4" style={{borderRadius:"16px"}} src="/User_Testing_Pic_04.jpg" alt="HeliosGuest-Visualdesign" />
+      </div> <div  style={{ margin: "auto", textAlign: "center",borderRadius:"50px" }}>
+        <img className="uncontainedImages mb-4" style={{borderRadius:"36px"}} src="/User_Testing_Pic_03.jpg" alt="HeliosGuest-Visualdesign" />
+      </div>
+      <div  style={{ margin: "auto", textAlign: "center",borderRadius:"50px" }}>
+        <img className="uncontainedImages mb-4" style={{borderRadius:"16px"}} src="/User_Testing_Pic_02.jpg" alt="HeliosGuest-Visualdesign" />
+      </div>
+     
+        <div  style={{ margin: "auto", textAlign: "center",borderRadius:"50px" }}>
+        <img className="uncontainedImages mb-4" style={{borderRadius:"16px"}} src="/User_Testing_Pic_01.jpg" alt="HeliosGuest-Visualdesign" />
+      </div>
+  
+   
 
-        <div  style={{ margin: "auto", textAlign: "center" }}>
-        <img className="uncontainedImages mb-4" src="/HeliosGuest-Visualdesign.webp" alt="HeliosGuest-Visualdesign" />
+
       </div>
 
-
-      </div>
-
-      <Paragraph title={"Combining smart devices and services"} info={"CONCLUSION"}>
-        <p className="mt-3 small-info">Design such a tool has it&apos;s challenges. We faced some negative comments at the beginning,
-        Smart devices and appartments services have an impact on a visitors stay. They can increase or, in case they are mishandled, decrease the quality of one&apos;s stay. 
-        With this app we try to make the experience personalised and more direct. We wanted to make the most of it.</p>
+      <Paragraph title={"Aesthetic and Functional Design Approach"} info={"CONCLUSION"}>
+        <p className="mt-3 small-info">This project underscored the importance of aligning user experience with business objectives. 
+        Our design not only met user expectations but also facilitated business processes, making the application a tool for both efficiency and satisfaction.</p>
 
         <p className="mt-3 small-info">
-        We&apos;ve contacted visitors and some gave us feedback. It impacted the design process.
-         We took their opinion and combined it with the business goals. 
-         The end result was something that both satisfied the team, and the visitors.
+       User feedback was integral to our design process. It helped us refine our approach, 
+       ensuring that the final product resonated with both our team and the users.
         </p>
         <p className="mt-3 small-info">
-        My process is a very collaborative one. I believe that the best product experience is one that we all come together to define. 
-        Our role in the end is to educate, listen, and make things better,
-         but ultimately, it&apos;s up to the stakeholders/client to make good choices for the project&apos;s direction and need. 
-         Note that we don&apos;t approach every project with all of these components every time. This framework has worked well for me and my clients, 
-         but not every client needs it.
+        Collaboration and stakeholder engagement were key in our process. We believe in a collective effort to define the best product experience, which is guided by the needs and choices of our users.
         </p>
       </Paragraph>
 
       <Paragraph title={"What I could do differently?"}>
         <ul>
           <li className="color484848">
-            <b>Take a personal exprerience of whole stay in the apartment</b>
+            <b>Explore more advanced AI integration.</b>
           </li>
           <li className="color484848">
-            <b> Interview more people</b>
+            <b> Incorporate more real-time user feedback during development.</b>
           </li >
-          <li className="color484848">
-            <b>Create a design library for consistency, reducing building time and a way to create room for innovation</b>
-          </li>
         </ul>
 
       </Paragraph>
 
       <Paragraph title={"Disclaimer"}>
-        <p className="mt-3 small-info">This is a personal freelance project for Smart Cozy Suites.</p>
+        <p className="mt-3 small-info">This is a personal freelance project for Customer trend.</p>
       </Paragraph>
 
     </>

@@ -203,7 +203,7 @@ a {
       }
 
 .color484848{
-  color:#484848;
+  color:#3b3b3b;
 }
 
 
@@ -288,4 +288,16 @@ a {
       font-size:14px;
     }
 
+}
+
+
+.dropShadow{
+  text-shadow: 2px 2px 1px rgb(73, 73, 73);
+}
+
+.linkStyle{
+  color:#3366CC;
+  font-weight:700;
+ font-size:18px;
+ text-decoration: underline;;
 }

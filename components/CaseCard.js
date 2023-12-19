@@ -9,15 +9,20 @@ const CaseCard = ({card,index}) => {
 {`
 
 .img{
-    height:60%;
+    height:100%;
     width:100%;
     object-fit: cover;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
 }
+.cardContainer{
+    width:70%;
+    height:100%;
+}
 
 .cardMine{
     max-width:900px;
+    height:366px;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
     border-radius: 16px;
     padding-left:0;
@@ -33,9 +38,7 @@ const CaseCard = ({card,index}) => {
     max-width:700px;
   }
 
-.img{
-    width:60%
-}
+
 
 
 }
@@ -43,14 +46,19 @@ const CaseCard = ({card,index}) => {
 
 @media only screen and (max-width: 768px) {
     .cardMine {
-    max-width:500px;
+    max-width:80vw;
+    max-height:966px;
+    height:auto;
   }
+  .cardContainer{
+    width:100%;
+    height:60%;
+}
 
   .img{
     border-top-left-radius: 16px;
     border-bottom-left-radius: 0px;
-    border-top-right-radius: 16px;
-    width:100%;
+    border-top-right-radius: 16px;  
 }
 .titles{
     width:100%;   
@@ -62,19 +70,16 @@ const CaseCard = ({card,index}) => {
 
 }
 
-@media only screen and (max-width: 540px) {
-    .cardMine {
-    max-width:300px;
-  }
-}
+
 
 `}
 </style>
 
 <div className="container d-flex flex-md-row  flex-column cardMine text-break mb-4 " >
 
+        <div className="cardContainer">
         <img className='img' src={card.photo} alt={card.title}/>
-
+        </div>
 
         <div className='titles card-body d-flex flex-column justify-content-center '>
             <p className='small-info'>{card.type}</p>

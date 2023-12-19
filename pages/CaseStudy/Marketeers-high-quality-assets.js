@@ -36,14 +36,14 @@ const CaseStudy = () => {
               .headerPhoto{
                 width:100%;
                 height:547.75px;
-                background-image:url(${Mutables.caseStudy[0].heroPhoto});
+                background-image:url(${Mutables.caseStudy[2].heroPhoto});
                 background-position: center;
               }
 
               @media only screen and (max-width: 600px) {
          .headerPhoto {
           height:447.75px;
-          background-position: right center;
+          background-position: left center;
             }
  
            }
@@ -147,7 +147,6 @@ const CaseStudy = () => {
 
 
 
-
           .designSystemPhoto{
            
           width:100%;
@@ -217,9 +216,9 @@ const CaseStudy = () => {
 
       <header className="headerPhoto mb-5">
         <div className="titleContainer">
-          <h1 className="w900 white">{Mutables.caseStudy[0].title}</h1>
-          <h3 className="white">{Mutables.caseStudy[0].subTitle}</h3>
-          <p className="w300 white">{Mutables.caseStudy[0].type}</p>
+          <h1 className="w900 white dropShadow">{Mutables.caseStudy[2].title}</h1>
+          <h3 className="white dropShadow">{Mutables.caseStudy[2].subTitle}</h3>
+          <p className="w300 white dropShadow">{Mutables.caseStudy[2].type}</p>
         </div>
       </header>
 
@@ -287,7 +286,7 @@ const CaseStudy = () => {
         </table>
       </div>
 
-      <Paragraph title={"Summary"} info={"High quality asset bank in the making"}>
+      <Paragraph title={"High quality asset bank in the making"} info={"Summary"}>
         <p className="mt-3 small-info">
           We&apos;ve created an easy to use platform to distribute product images, videos and texts for use in marketing campaigns.
           This helps streamline the process of obtaining official and high quality digital elements a marketeer needs by making available all the necessary digital assets, easy to find and export.

@@ -53,8 +53,12 @@ const Drawer = (props) => {
          <a className='me-5 links mt-3' key={Mutables.nav[1].name+"a"} href={Mutables.nav[1].url}  target="_blank" rel="noreferrer">{Mutables.nav[1].name}</a>
          <span  className='me-5 links mt-3' key={Mutables.nav[2].name+"a"} onClick={dropClick}>{Mutables.nav[2].name}</span >
          {show&&<>
+            <Link href={`/CaseStudy/swipe-case-study`}><span className='me-5  mt-3'>Swipe Surveys app</span></Link>
+            <Link href={`/CaseStudy/Marketeers-high-quality-assets`}><span className='me-5  mt-3'>Concierge services</span></Link>
             <Link href={`/CaseStudy/airbnb-apartments`}><span className='me-5  mt-3'>Asset bank</span></Link>
-            <Link href={`/CaseStudy/Marketeers-high-quality-assets`}><span className='me-5  mt-3'>Concierge services</span></Link></>}
+            
+            </>
+            }
          <a className='me-5 links mt-3' key={Mutables.nav[3].name+"a"} href={Mutables.nav[3].url}  target="_blank" rel="noreferrer">{Mutables.nav[3].name}</a>
 
 
